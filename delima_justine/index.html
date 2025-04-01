@@ -123,36 +123,59 @@
                     onInput="checkComment()">
                 <textarea 
                     placeholder="comment here" 
-                    id="comment"
+                    id="comment_area"
                     onInput="checkComment()"
                 ></textarea>
                 <button 
-                    type="reset" 
+                    type="button" 
                     id="comment_btn"
-                    onClick="addComment()" 
+                    onClick="addComment()"
                     disabled>
                         Comment
                 </button>
-                <script src="script.js"></script>
             </form>
+
+            <div class="arrange-selection">
+                <label>Sort By:</label>
+                <button 
+                    type="button"
+                    onClick="ascendingOrder()">
+                        Ascending
+                </button>
+                <button 
+                    type="button"
+                    onClick="descendingOrder()">
+                        Descending
+                </button>
+                <script src="script.js"></script>
+            </div>
         </div>
 
-        <div class="comments">
+        <div id="comments">
             <h2>Comments</h2>
 
-            <h2 class="comment-name">Arroyo</h2>
-            <p class="new-comment">
-                Goodluck with your goals! Continue to learn.
-            </p>
+            <div class="comment">
+                <h2 class="comment-name">Arroyo</h2>
+                <p class="new-comment">
+                    Goodluck with your goals! Continue to learn. 
+                </p>
+                <label class="date">3/19/2025, 9:42:12 PM</label>
+            </div>
 
-            <h2 class="comment-name">Relente</h2>
-            <p class="new-comment">𐙚⋆°｡⋆You're making great progress! </p>
+            <div class="comment">
+                <h2 class="comment-name">Relente</h2>
+                <p class="new-comment">𐙚⋆°｡⋆You're making great progress!</p>
+                <label class="date">3/19/2025, 9:09:26 PM</label>
+            </div>
             
-            <h2 class="comment-name">Ynion</h2>
-            <p class="new-comment">
-                Stay keep pushing forward that your resilience will lead you 
-                to the fulfillment of your dreams. 
-            </p>
+            <div class="comment">
+                <h2 class="comment-name">Ynion</h2>
+                <p class="new-comment">
+                    Stay keep pushing forward that your resilience will lead you 
+                    to the fulfillment of your dreams. 
+                </p>
+                <label class="date">3/19/2025, 9:18:28 PM</label>
+            </div>
         </div>
     </div>
 </body>

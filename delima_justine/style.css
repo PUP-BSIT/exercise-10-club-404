@@ -379,12 +379,12 @@ legend {
         border-radius: 10px;
     }
 
-    #comment {
+    #comment_area {
         width: 225px;
         border-radius: 10px;
     }
 
-    label {
+    .comment-form label {
         color: var(--color4);
     }
 
@@ -394,7 +394,7 @@ legend {
         gap: 10vh;
     }
 
-    .comments h2 {
+    #comments h2 {
         color: var(--color4);
         text-align: center;
         background-color: var(--color2);
@@ -402,17 +402,33 @@ legend {
         margin: 0;
     }
 
-    .comments .comment-name {
+    #comments .comment-name {
         margin-top: 10px;
         margin-bottom: 0px;
     }
 
-    .comments .new-comment {
+    #comments .new-comment {
         margin: 0;
         color: var(--color4);
         border: 2px dashed var(--color2);
         text-align: center;
         padding: 10px;
+    }
+
+    .comment .date {
+        color: var(--color4);
+        background-color: var(--color2);
+        display: flex;
+        justify-content: end;
+    }
+
+    .arrange-selection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 10px;
     }
 }
 
@@ -491,11 +507,19 @@ legend {
 
     .comment-form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
     }
 
     .comment-form form {
         width: 361px;
+    }
+
+    .arrange-selection {
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -614,13 +638,17 @@ legend {
     .comment-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 3;
         grid-column-gap: 20px;
         padding: 20px 100px;
     }
 
     .comment-form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .comment-form form {
@@ -719,7 +747,9 @@ legend {
 
     .comment-form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .comment-form form {
