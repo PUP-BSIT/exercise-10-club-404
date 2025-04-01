@@ -213,28 +213,6 @@ li {
     transform: scale(1.05);
 }
 
-.fa-sparkles, .fa-heart {
-    display: inline-block;  /* Ensures animations work */
-    color: red;
-    animation: sparkles 1.5s infinite;
-}
-
-@keyframes sparkles {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.2); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-.fa-sparkles {
-    color: gold;
-    animation: sparkles 1.5s infinite;
-}
-
-.fa-heart {
-    color: red;
-    animation: sparkles 2s infinite;
-}
-
 .my-gallery {
     margin-top: 10px;
     background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
@@ -363,11 +341,7 @@ li {
     opacity: 0.5;
 }
 
-.contact-left 
-input:valid:required ~ 
-input:valid:required ~ 
-textarea:valid:required ~ 
-button {
+.contact-left input:valid:required~input:valid:required~textarea:valid:required~button {
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
@@ -453,7 +427,7 @@ button {
 #comment_form input,
 #comment_form textarea,
 #comment_btn {
-    width: 100%; 
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ffb6c1;
@@ -515,7 +489,7 @@ button {
 }
 
 #comment_btn:not(:disabled):hover {
-    background: #ff6780; 
+    background: #ff6780;
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -530,12 +504,12 @@ button {
 
 #comment_form textarea:focus {
     border: 2px solid #a363aa;
-    outline: none; 
+    outline: none;
 }
 
 #comment_form input:focus {
     border: 2px solid #a363aa;
-    outline: none; 
+    outline: none;
 }
 
 #comment_list {
@@ -547,7 +521,8 @@ button {
     background-color: #ffe6f0;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -557,7 +532,8 @@ input, textarea {
     transition: border-color 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: violet;
     outline: none;
     box-shadow: 0 0 5px violet;
@@ -595,7 +571,7 @@ button:disabled {
     #comment_form {
         max-width: 90%;
     }
-} 
+}
 
 @media (min-width: 321px) and (max-width: 375px) {
     .greet h1 {
@@ -657,7 +633,7 @@ button:disabled {
     .my-gallery {
         width: 100%;
         padding: 10px;
-        margin-bottom: 50px; 
+        margin-bottom: 50px;
     }
 
     .my-gallery h2 {
