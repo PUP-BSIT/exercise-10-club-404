@@ -149,23 +149,37 @@
 
       <div id="goal_comments">
         <h3>Comment Section</h3>
-        <div class="comment">
-          <p><strong>Arroyo</strong></p>
-          <p>I like your goals. Work towards it to achieve peak happiness</p>
-        </div>
-        <div class="comment">
-          <p><strong>Justine</strong></p>
-          <p>I hope you achieve your goals!</p>
-        </div>
-        <div class="comment">
-          <p><strong>Bea</strong></p>
-          <p>
-            Your passion and dedication will be a way to achieve your goal in
-            life.
-          </p>
+
+        <label for="sort_comments">Sort by:</label>
+        <select id="sort_comments">
+          <option value="latest">Latest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+
+        <div id="all_comments">
+          <div class="comment">
+            <small>(3/19/2025, 8:42:12 PM)</small>
+            <p><strong>Arroyo</strong></p>
+            <p>I like your goals. Work towards it to achieve peak happiness</p>
+          </div>
+
+          <div class="comment">
+            <small>(3/19/2025, 8:59:47 PM)</small>
+            <p><strong>Justine</strong></p>
+            <p>I hope you achieve your goals!</p>
+          </div>
+
+          <div class="comment">
+            <small>(3/19/2025, 9:18:28 PM)</small>
+            <p><strong>Bea</strong></p>
+            <p>
+              Your passion and dedication will be a way to achieve your goal in
+              life.
+            </p>
+          </div>
+          <ul id="comment_list"></ul>
         </div>
 
-        <ul id="comment_list"></ul>
         <form id="comment_form">
           <input
             type="text"
