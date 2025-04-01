@@ -58,15 +58,17 @@ function displayComment() {
 function sortAscending() {
 	let commentContainer = document.querySelectorAll(".comment-user");
 
-	commentContent.sort(function(a,b) {
+	commentContent.sort((a,b) => {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate === secondDate) {
-			return 1;
-		} else {
-			return -1;
-		}
+		if (firstDate > secondDate) {
+            return 1;
+        }
+
+        if (firstDate < secondDate) {
+            return -1;
+        }
 
 		return 0;
 	})
@@ -85,15 +87,17 @@ function sortAscending() {
 function sortDescending() {
 	let commentContainer = document.querySelectorAll(".comment-user");
 
-	commentContent.sort(function(a,b) {
+	commentContent.sort((a,b) => {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate === secondDate) {
-			return 1;
-		} else {
-			return -1;
-		}
+		if (firstDate < secondDate) {
+            return 1;
+        }
+
+        if (firstDate > secondDate) {
+            return -1;
+        }
 
 		return 0;
 	})
