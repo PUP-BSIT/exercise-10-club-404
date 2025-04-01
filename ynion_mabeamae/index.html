@@ -97,8 +97,8 @@
               id="message"
               name="message"
               cols="30"
-              rows="10"
-            ></textarea>
+              rows="10">
+            </textarea>
           </div>
           <div class="checkbox-container">
             <input type="checkbox" id="send_copy" />
@@ -119,19 +119,25 @@
       </ul>
       <div class="comment-info">
         <h2>Comment Section</h2>
+        <div class="sort-container">
+          <select id="sort_type" onchange="sortComments()">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
         <div class="comment-container" id="comment">
           <div class="upper-tags">
-            <div class="user-tag"><strong>Arroyo:</strong></div>
+            <div class="user-tag"><strong>Arroyo</strong></div>
             <div class="user-comment">
               It is a great goal to achieve! Work well.
             </div>
           </div>
           <div class="upper-tags">
-            <div class="user-tag"><strong>Delima:</strong></div>
+            <div class="user-tag"><strong>Delima</strong></div>
             <div class="user-comment">I hope you achieve your goals!</div>
           </div>
           <div class="upper-tags">
-            <div class="user-tag"><strong>˚ʚ♡ɞ˚Pat:</strong></div>
+            <div class="user-tag"><strong>˚ʚ♡ɞ˚Pat</strong></div>
             <div class="user-comment">𐙚⋆°｡⋆ You're making great progress!</div>
           </div>
         </div>

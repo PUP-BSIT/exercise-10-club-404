@@ -1,10 +1,13 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 body {
   background-color: #1b497a;
   color: #ffffff;
   margin: 0px;
   padding: 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   align-items: center;
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -47,7 +50,7 @@ body {
   background-color: #04023f;
   text-align: center;
   padding: 10px;
-  border-radius: 30px;
+  margin: 8px auto;
 }
 
 .header,
@@ -366,10 +369,10 @@ p:hover {
   border: 2px solid #ccc;
   margin-bottom: 10px;
   border-radius: 5px;
-  background-color: #216c8b;
+  background-color: #608bc1;
   color: white;
   padding: 2px;
-  margin: 20px;
+  margin: 60px;
 }
 
 .upper-tags {
@@ -380,28 +383,36 @@ p:hover {
   border-radius: 10px;
   background-color: #3a628c;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease;
 }
 
 .upper-tags:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
   background-color: #216c8b;
 }
 
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.user-tag {
+  font-size: 18px;
+  color: white;
+}
+
 .user-comment {
   border: 1px solid lightblue;
-  padding: 10px;
   border-radius: 10px;
   margin: 8px auto;
   padding: 3px;
   gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .user-tag {
@@ -409,6 +420,19 @@ p:hover {
   font-size: 20px;
   width: fit-content;
   padding: 7px;
+  border-radius: 7px;
+}
+
+.date-tag {
+  text-align: center;
+  align-self: center;
+  font-size: medium;
+  font-style: italic;
+  border: 1px solid lightblue;
+  color: #2894a7;
+  background-color: white;
+  width: fit-content;
+  padding: 4px;
   border-radius: 7px;
 }
 
@@ -421,15 +445,68 @@ p:hover {
   background-color: lightblue;
 }
 
+.sort-container {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+#sort_type {
+  width: 110px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+}
+
+#sort_type:hover {
+  background-color: #e8f5e9;
+  border-color: lightblue;
+}
+
+#sort_type option {
+  text-align: justify;
+}
+
+#sort_type:hover {
+  background-color: #e8f5e9;
+  border-color: lightblue;
+}
+
+#sort_type:focus {
+  outline: none;
+  box-shadow: 0 0 5px lightblue;
+}
+
 @media (max-width: 768px) {
+  html,
   body {
     font-size: 14px;
+    width: 100%;
+    overflow-x: hidden;
   }
 
   .header {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-intro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-intro span {
+    display: inline-block;
+    margin: 0 auto;
   }
 
   .header-intro,
@@ -467,12 +544,13 @@ p:hover {
   }
 
   .contact-form {
-    padding: 10px;
-    width: 90%;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .form-container {
-    padding: 10px;
+    padding: 20px;
   }
 
   .form-grid {
@@ -488,7 +566,7 @@ p:hover {
   }
 
   .comment-form {
-    width: 90%;
+    width: 80%;
     padding: 10px;
   }
 
@@ -511,6 +589,15 @@ p:hover {
   .comment-list li {
     padding: 10px;
     margin-bottom: 10px;
+  }
+
+  .comment-container {
+    margin: 20px;
+  }
+
+  .comment-form {
+    padding: 20px;
+    width: 80%;
   }
 
   .user-name {
@@ -564,7 +651,7 @@ p:hover {
   }
 
   .comment-form {
-    width: 70%;
+    width: 50%;
     padding: 20px;
   }
 
