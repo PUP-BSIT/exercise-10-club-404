@@ -1,4 +1,3 @@
-const date = new Date().toLocaleString();
 const commentContent = [
 	{
 		user: "Justine",
@@ -33,8 +32,9 @@ function displayComment() {
 	let commenter = document.getElementById("user_name");
 	let comment = document.getElementById("user_comment");
 	let button = document.getElementById("comment_button");
-	let commentInfo = document.getElementsByTagName("label");
 
+	const date = new Date().toLocaleString();
+	
 	const newComment = `<div class="comment-user">
               				<h2 class="commenter">${commenter.value}</h2>
               				<label class="date">${date}</label>
@@ -62,11 +62,9 @@ function sortAscending() {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate > secondDate) {
+		if (firstDate === secondDate) {
 			return 1;
-		}
-
-		if (firstDate < secondDate) {
+		} else {
 			return -1;
 		}
 
@@ -91,11 +89,9 @@ function sortDescending() {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate < secondDate) {
-			return 1
-		}
-
-		if (firstDate > secondDate) {
+		if (firstDate === secondDate) {
+			return 1;
+		} else {
 			return -1;
 		}
 
