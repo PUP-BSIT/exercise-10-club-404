@@ -135,16 +135,38 @@
           </form>
           <div id="comment_container">
             <h2>Comments:</h2>
-            <h2 class="commenter">Justine</h2>
-            <p class="comment-content">
-              I hope you achieve your goals! - Justine
-            </p>
-            <h2 class="commenter">Patricia</h2>
-            <p class="comment-content">𐙚⋆°｡⋆That's a great goal! - Pat˚ʚ♡ɞ˚</p>
-            <h2 class="commenter">Bea</h2>
-            <p class="comment-content">
-              Achieve your goals, I know you can do it! - Bea
-            </p>
+            <div class="sort-form">
+              <label>Sort by:</label>
+              <button type="button" 
+                onClick="sortAscending()">
+                  Ascending
+              </button>
+              <button type="button" 
+                onClick="sortDescending()">
+                  Descending
+              </button> 
+            </div> 
+            <div class="comment-user">
+              <h2 class="commenter">Justine</h2>
+              <label class="date">3/19/2025, 9:59:47 PM</label>
+              <p class="comment-content">
+                I hope you achieve your goals! - Justine
+              </p>
+            </div>
+            <div class="comment-user">
+              <h2 class="commenter">Patricia</h2>
+              <label class="date">3/19/2025, 10:09:26 PM</label>
+              <p class="comment-content">
+                𐙚⋆°｡⋆That's a great goal! - Pat˚ʚ♡ɞ˚
+              </p>
+            </div>
+            <div class="comment-user">
+              <h2 class="commenter">Bea</h2>
+              <label class="date">3/19/2025, 10:18:28 PM</label>
+              <p class="comment-content">
+                Achieve your goals, I know you can do it! - Bea
+              </p>
+            </div>
           </div>
         </div>
       </div>
