@@ -18,7 +18,7 @@ const commentListData = [
     name: "˚ʚ♡ɞ˚Pat",
     comment: "𐙚⋆°｡⋆ You're making great progress!",
     date: new Date("03/19/2025, 9:20:40 PM"),
-  },
+  }
 ];
 
 function validateComment() {
