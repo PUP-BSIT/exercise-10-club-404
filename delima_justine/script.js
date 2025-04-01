@@ -56,7 +56,7 @@ function addComment() {
 function ascendingOrder() {
 	let collectionOfComments = document.querySelectorAll(".comment");
 
-	comments.sort(function(a, b) {
+	comments.sort((a, b) => {
         let firstDate = new Date(a.date);
         let secondDate = new Date(b.date);
 
@@ -84,7 +84,7 @@ function ascendingOrder() {
 function descendingOrder() {
 	let collectionOfComments = document.querySelectorAll(".comment");
 	
-	comments.sort(function(a, b) {
+	comments.sort((a, b) => {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 
