@@ -62,11 +62,13 @@ function sortAscending() {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate === secondDate) {
-			return 1;
-		} else {
-			return -1;
-		}
+		if (firstDate > secondDate) {
+            return 1;
+        }
+
+        if (firstDate < secondDate) {
+            return -1;
+        }
 
 		return 0;
 	})
@@ -89,11 +91,13 @@ function sortDescending() {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
-		if (firstDate === secondDate) {
-			return 1;
-		} else {
-			return -1;
-		}
+		if (firstDate < secondDate) {
+            return 1;
+        }
+
+        if (firstDate > secondDate) {
+            return -1;
+        }
 
 		return 0;
 	})
