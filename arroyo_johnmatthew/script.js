@@ -58,7 +58,7 @@ function displayComment() {
 function sortAscending() {
 	let commentContainer = document.querySelectorAll(".comment-user");
 
-	commentContent.sort(function(a,b) {
+	commentContent.sort((a,b) => {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
@@ -87,7 +87,7 @@ function sortAscending() {
 function sortDescending() {
 	let commentContainer = document.querySelectorAll(".comment-user");
 
-	commentContent.sort(function(a,b) {
+	commentContent.sort((a,b) => {
 		let firstDate = new Date(a.date);
 		let secondDate = new Date(b.date);
 		
